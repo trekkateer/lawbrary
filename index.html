@@ -13,14 +13,14 @@
         exit('<script>window.location.replace("'.$destination.'");</script>');
     }
     ?>
-    <?php //Gets language and redirects if not set
+    <!-- ?php //Gets language and redirects if not set
     $domain = $_SERVER['HTTP_HOST'];
     $basedomain = 'l'.(explode('.l', $domain)[1] ?? $domain); //Using '.l' instead of '.' allows for testing with localhost
     $subdomain = explode('.l', $domain)[0]; //Determines which language we're using
     if (str_contains($domain, '.l')) {
         $lang = $subdomain;
     } else {redirect('//en.'.$basedomain);}
-    ?>
+    ? -->
     <?php //Gets translations for text on the website
         //Connects to the content database
         $username2="ug0iy8zo9nryq"; $password2="T_1&x+$|*N6F"; $database2="dbupm726ysc0bg";
